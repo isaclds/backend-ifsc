@@ -5,17 +5,14 @@ import ifsc.edu.pbe.model.Data;
 import ifsc.edu.pbe.model.Horario;
 import ifsc.edu.pbe.model.Pong;
 import ifsc.edu.pbe.service.DataTimeService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class PingController {
-
-    private final DataTimeService dataTimeService;
-
-    public PingController(DataTimeService dataTimeService) {
-        this.dataTimeService = dataTimeService;
-    }
+    @Autowired
+    private DataTimeService dataTimeService;
 
     @GetMapping("/ping")
     public Pong ping() {

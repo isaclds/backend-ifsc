@@ -1,0 +1,19 @@
+-----CRIAR LISTA-----
+curl -X POST http://localhost:8080/lista \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nome": "Lista de Compras"
+  }'
+
+-----CRIAR TAREFA-----
+curl -X POST http://localhost:8080/tarefa \
+  -H "Content-Type: application/json" \
+  -d '{
+    "nome": "Comprar pão",
+    "descricao": "Ir na padaria antes das 18h",
+    "horarioMovimentacao": "17:30:00",
+    "data": "2026-08-04T17:30:00",
+    "lista": {
+      "id": "ID_FICTICIO_DA_LISTA_AQUI"
+    }
+  }'

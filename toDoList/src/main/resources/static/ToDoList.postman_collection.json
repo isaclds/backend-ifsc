@@ -1,0 +1,119 @@
+{
+  "info": {
+    "_postman_id": "b340661d-515b-4eab-894c-c904e2a2e78e",
+    "name": "ToDoList",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "53468267",
+    "_collection_link": "https://go.postman.co/collection/53468267-b340661d-515b-4eab-894c-c904e2a2e78e?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Lista",
+      "item": [
+        {
+          "name": "Busca todas listas",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"isac\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/lista",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "lista"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Cria lista",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Não feita\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "localhost:8080/lista",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "lista"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Tarefa",
+      "item": [
+        {
+          "name": "Criar tarefa",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"nome\": \"Comprar pão ontem\",\n    \"descricao\": \"Ir na padaria antes das 18h\",\n    \"horarioMovimentacao\": \"17:30:00\",\n    \"data\": \"2026-08-04T17:30:00\",\n    \"lista\": {\n      \"id\": \"-ccc2-4ee2-92d7-590226592e93\"\n    }\n  }",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:8080/tarefa",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "8080",
+              "path": [
+                "tarefa"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Busca por id",
+          "request": {
+            "method": "GET",
+            "header": []
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}

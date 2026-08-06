@@ -17,3 +17,15 @@ curl -X POST http://localhost:8080/tarefa \
       "id": "ID_FICTICIO_DA_LISTA_AQUI"
     }
   }'
+
+
+-----CRIAR ANOTACAO-----
+curl -X POST http://localhost:8080/anotacoes \
+  -H "Content-Type: application/json" \
+  -d '{
+    "texto": "Não esquecer de levar o cartão de fidelidade",
+    "horarioCriacao": "17:35:00",
+    "tarefa": {
+      "id": "ID_FICTICIO_DA_TAREFA_AQUI"
+    }
+  }'

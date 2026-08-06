@@ -1,4 +1,4 @@
-package ifsc.ads.todolist.exception;
+package ifsc.ads.todolist.dto.exception;
 
 import java.time.LocalDateTime;
 

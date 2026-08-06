@@ -1,5 +1,6 @@
 package ifsc.ads.todolist.exception;
 
+import ifsc.ads.todolist.dto.exception.ErrorResponse;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpStatus;

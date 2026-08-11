@@ -1,0 +1,23 @@
+{
+  "name": "nodejsinicio",
+  "version": "1.0.0",
+  "description": "Inicio de node js",
+  "keywords": [
+    "estudo"
+  ],
+  "license": "ISC",
+  "author": "Isac Lehmkuhl dos Santos",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "vitest",
+    "dev": "nodemon"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

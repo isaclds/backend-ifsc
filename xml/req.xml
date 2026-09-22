@@ -1,0 +1,8 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:gs="http://webServices.xml.edu.ifsc/">
+ <soapenv:Header/>
+ <soapenv:Body>
+  <gs:sayHello>
+   <arg0>Eu</arg0>
+  </gs:sayHello>
+ </soapenv:Body>
+</soapenv:Envelope>
